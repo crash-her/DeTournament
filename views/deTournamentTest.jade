@@ -1,0 +1,64 @@
+extends layout
+
+block headContent
+    script(type='text/javascript', src='/javascripts/deTournament.js')
+    script(type='text/javascript', src='/javascripts/deTournamentTest.js')
+
+block content
+    div#failed
+        h1 Failed
+        ul#testFail
+
+    div#passed
+        h1 Passed
+        ul#testPass
+
+    table
+        thead
+            tr
+                th Winner Bracket
+                th Loser bracket
+        tbody
+            tr
+                td
+                    #tournyU
+                td
+                    #tourny2U
+
+    table
+        thead
+            tr
+                th Final Bracket
+        tbody
+            tr
+                td
+                    #finalTournyU
+
+    #teamsU
+
+    h1#winnerU
+
+    table
+        thead
+            tr
+                th Winner Bracket
+                th Loser bracket
+        tbody
+            tr
+                td
+                    #tourny
+                td
+                    #tourny2
+
+    table
+        thead
+            tr
+                th Final Bracket
+        tbody
+            tr
+                td
+                    #finalTourny
+
+    #teams
+
+    h1#winner
