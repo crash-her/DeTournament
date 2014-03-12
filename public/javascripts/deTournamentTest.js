@@ -214,5 +214,5 @@ function testdefeted(){
 
     $("#tourny2").append("<br><Strong>Winner: " + tourny.getWinnerNameLb() + "</Strong>");
 
-    $("#winner").append( "Tournament winner: " + tourny.finalMatch2.getWinner().getName());//+ tourny.getTournamentWinner().getName());
+    $("#winner").append( "Tournament winner: " + tourny.getWinner());//+ tourny.getTournamentWinner().getName());
 }

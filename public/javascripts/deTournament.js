@@ -219,6 +219,10 @@ Tournament.prototype.getWinnerNameLb = function(){
 
     return winner != null ? winner.getName() : "";
 };
+
+Tournament.prototype.getWinner = function(){
+    return this.finalMatch2.getWinner().getName();
+};
 //End Tournament Region
 
 //Region Bracket

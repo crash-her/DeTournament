@@ -23,6 +23,7 @@ note: must have node.js and npm installed first.
 4. Set the winner of the rounds. setRoundMatchWinner(WinnerName)
 5. Start next round. startNextRound()
 6. repeat steps 4 and 5 until tournament has a winner.
+7. Get winners name.
 
 Example:
 
@@ -79,3 +80,7 @@ tourny.startNextRound();
 --Step 5
 
 tourny.setRoundMatchWinner('mat2');
+
+--Step 7
+
+tourny.getWinner();
