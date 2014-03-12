@@ -25,31 +25,57 @@ note: must have node.js and npm installed first.
 6. repeat steps 4 and 5 until tournament has a winner.
 
 Example:
+
 --Step 1
+
 var teamArr = [];
+
 teamArr.push(new Team("mat1"));
+
 teamArr.push(new Team("mat2"));
+
 teamArr.push(new Team("mat3"));
+
 teamArr.push(new Team("mat4"));
+
 --Step 2
+
 var tourny = new Tournament(teamArr);
+
 --Step 3
+
 tourny.startTournament();
+
 --Step 4
+
 tourny.setRoundMatchWinner('mat1');
+
 tourny.setRoundMatchWinner('mat3');
+
 --Step 5
+
 tourny.startNextRound();
 
 //Winning bracket 2
+
 tourny.setRoundMatchWinner('mat1');
+
 //losing bracket 1
+
 tourny.setRoundMatchWinner('mat2');
+
 --Step 4
+
 tourny.startNextRound();
+
 --Step 5
+
 tourny.setRoundMatchWinner('mat2');
+
 --Step 4
+
 tourny.startNextRound();
+
 --Step 5
+
 tourny.setRoundMatchWinner('mat2');
